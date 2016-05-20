@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load humanize %}
 <html>
     <head>
         <title>My first Django page</title>
@@ -9,6 +10,18 @@
         {% else %}
             <p>Welcome guest!</p>
         {% endif %}
+        <main>
+            <h1>{{ books.count|apnumber|title }} book{{ books.count|pluralize }}</h1>
+
+            {% for book in books %}
+                <h2>{{ book.title }} by {{ book.list_authors }}</h2>
+                {% if book.is_favourite %}
+                    <span class="highlight">favourite</span>
+                {% endif %}
+                {{ book.review  }}
+            {% endfor %}
+
+        </main>
 
     </body>
 </html>
