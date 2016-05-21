@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head lang="en">
-    
-        <title>An author</title>
-    </head>
-    <body>
-        {{ author.name }}
+{% extends "base.html" %}
+{% block content %}
+        <h2>{{ author.name }}</h2>
         {% for book in author.books.all %}
             {% if book.review %}
                 <div class="author">
@@ -16,5 +11,4 @@
 
             {% endif %}
         {% endfor %}
-    </body>
-</html>
+{% endblock %}
