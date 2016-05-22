@@ -1,10 +1,10 @@
 #from django.http import HttpResponse
 from django.core.urlresolvers import reverse
 from django.db.models import Count
-from django.shortcuts import redirect, render, get_object_or_404
+from django.shortcuts import get_object_or_404, redirect, render
 from django.views.generic import DetailView, View
 from django.views.generic.edit import CreateView
-from books.forms import ReviewForm, BookForm
+from books.forms import BookForm, ReviewForm
 from .models import Author, Book
 
 # Create your views here.
@@ -46,7 +46,6 @@ class AuthorDetail(DetailView):
     model = Author
     template_name = "author.html"
 
-
 class ReviewList(View):
     """
     List all of the books that we want to review.
@@ -56,12 +55,12 @@ class ReviewList(View):
 
         context = {
             'books': books,
-            'form': BookForm
+            'form': BookForm,
         }
 
         return render(request, "list-to-review.html", context)
 
-    def post(self,request):
+    def post(self, request):
         form = BookForm(request.POST)
         books = Book.objects.filter(date_reviewed__isnull=True).prefetch_related('authors')
 
@@ -70,10 +69,11 @@ class ReviewList(View):
             return redirect('review-books')
 
         context = {
-            'books': books,
-            'form': BookForm
+            'form': form,
+            'book': books,
         }
 
+        return render(request, "list-to-review.html", context)
         return render(request, "list-to-review.html", context)
 
 def review_book(request, pk):

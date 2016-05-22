@@ -17,7 +17,7 @@ class BookAdmin(admin.ModelAdmin):
     book_authors.short_description = "Author(s)"
 
 
-    list_display = ("title", "book_authors", "date_reviewed", "is_favourite")
+    list_display = ("title", "book_authors", "date_reviewed", "is_favourite",)
     list_editable = ("is_favourite",)
     list_display_links = ("title", "date_reviewed",)
     list_filter = ("is_favourite",)
