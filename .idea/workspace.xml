@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b08cd25e-f60b-4870-b6e7-e81d70ba132b" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/books/tests.py" afterPath="$PROJECT_DIR$/books/tests/tests.py" />
-    </list>
+    <list default="true" id="b08cd25e-f60b-4870-b6e7-e81d70ba132b" name="Default" comment="" />
     <ignored path="readit.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -62,12 +60,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/books/tests/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16816144" vertical-offset="0" max-vertical-offset="446">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="factories.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/books/factories.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.62184876" vertical-offset="662" max-vertical-offset="915">
+              <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,6 +154,7 @@
         <option value="$PROJECT_DIR$/readit/templates/login.html" />
         <option value="$PROJECT_DIR$/readit/templates/base.html" />
         <option value="$PROJECT_DIR$/books/tests/tests.py" />
+        <option value="$PROJECT_DIR$/books/factories.py" />
       </list>
     </option>
   </component>
@@ -151,10 +162,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="132" />
-    <option name="y" value="133" />
+    <option name="x" value="111" />
+    <option name="y" value="143" />
     <option name="width" value="1201" />
-    <option name="height" value="551" />
+    <option name="height" value="343" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -584,7 +595,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="132" y="133" width="1201" height="551" extended-state="0" />
+    <frame x="111" y="143" width="1201" height="343" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -961,7 +972,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="750">
           <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#24#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1012,9 +1023,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/books/tests/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16816144" vertical-offset="0" max-vertical-offset="446">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books/factories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62184876" vertical-offset="662" max-vertical-offset="915">
+          <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
