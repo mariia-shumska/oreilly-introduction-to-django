@@ -21,7 +21,8 @@ DJANGO_MODE = os.getenv('DJANGO_MODE', "Production").lower()
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '2&rf!r)91nuj4!8%&ebtc=@6^03_oauf-t9hs*g%4xh8^9b_vd'
+SECRET_KEY = os.getenv('SECRET_KEY')
+#SECRET_KEY = '2&rf!r)91nuj4!8%&ebtc=@6^03_oauf-t9hs*g%4xh8^9b_vd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 if DJANGO_MODE == 'local':
@@ -106,7 +107,7 @@ elif DJANGO_MODE == 'staging':
         }
     }
 
-elif DJANGO_MODE == 'poduction':
+elif DJANGO_MODE == 'production':
     import dj_database_url
     #Handles DATABASE_URL environment variable
     DATABASES = {'default': dj_database_url.config()}
